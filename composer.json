@@ -1,0 +1,21 @@
+{
+  "name": "inter/inter-sdk-php",
+  "description": "INTER APIs SDK PHP",
+  "version": "1.0.0",
+  "require": {
+    "guzzlehttp/guzzle": "^7.0",
+    "php": ">=7.2",
+    "ext-json": "*"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": ">=8.5"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Inter\\": "src/inter"
+    }
+  }
+}

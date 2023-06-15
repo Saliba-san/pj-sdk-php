@@ -1,0 +1,11 @@
+*.log
+*.zip
+logs/
+target/
+test-output/
+.settings
+.project
+.classpath
+.DS_Store
+*.iml
+/.idea/

@@ -1,0 +1,200 @@
+{
+  "APIs": {
+    "TOKEN": {
+      "URL": {
+        "production": "https://cdpj.partners.bancointer.com.br/oauth/v2/",
+        "hml": "https://cdpj.partners.uatbi.com.br/oauth/v2/"
+      },
+      "ENDPOINTS": {
+        "authorize": {
+          "route": "token",
+          "method": "POST"
+        }
+      }
+    },
+    "BANKING": {
+      "URL": {
+        "production": "https://cdpj.partners.bancointer.com.br/banking/v2/",
+        "hml": "https://cdpj.partners.uatbi.com.br/banking/v2/"
+      },
+      "ENDPOINTS": {
+        "saldo": {
+          "route": "saldo",
+          "method": "GET"
+        },
+        "extratoSimples": {
+          "route": "extrato",
+          "method": "GET"
+        },
+        "extratoEnriquecido": {
+          "route": "extrato/completo",
+          "method": "GET"
+        },
+        "extratoPDF": {
+          "route": "extrato/exportar",
+          "method": "GET"
+        },
+        "pagamentos": {
+          "route": "pagamento",
+          "method": "GET"
+        },
+        "pagamentosDarf": {
+          "route": "pagamento/darf",
+          "method": "GET"
+        },
+        "pagamentosLote": {
+          "route": "pagamento/lote/",
+          "method": "GET"
+        },
+        "obterWebhook": {
+          "route": "webhooks/",
+          "method": "GET"
+        },
+        "deleteWebhook": {
+          "route": "webhooks/",
+          "method": "DELETE"
+        },
+        "criarWebhook": {
+          "route": "webhooks/",
+          "method": "PUT"
+        },
+        "incluiPagamento": {
+          "route": "pagamento",
+          "method": "POST"
+        },
+        "incluiPagamentoDarf": {
+          "route": "pagamento/darf",
+          "method": "POST"
+        },
+        "incluiLote": {
+          "route": "pagamento/lote",
+          "method": "POST"
+        },
+        "incluiPix": {
+          "route": "pix",
+          "method": "POST"
+        },
+        "incluiTed": {
+          "route": "ted",
+          "method": "POST"
+        }
+      }
+    },
+    "PIX": {
+      "URL": {
+        "production": "https://cdpj.partners.bancointer.com.br/pix/v2/",
+        "hml": "https://cdpj.partners.uatbi.com.br/pix/v2/"
+      },
+      "ENDPOINTS": {
+        "cobrancaImediata": {
+          "route": "cob/",
+          "method": "GET"
+        },
+        "listaCobrancaImediata": {
+          "route": "cob",
+          "method": "GET"
+        },
+        "listaLocations": {
+          "route": "loc",
+          "method": "GET"
+        },
+        "location": {
+          "route": "loc/",
+          "method": "GET"
+        },
+        "consultarPix": {
+          "route": "pix/",
+          "method": "GET"
+        },
+        "consultarDevolucaoImediata": {
+          "route": "pix/%s/devolucao/",
+          "method": "GET"
+        },
+        "obterWebhook": {
+          "route": "webhook/",
+          "method": "GET"
+        },
+        "pixRecebidos": {
+          "route": "pix",
+          "method": "GET"
+        },
+        "deleteWebhook": {
+          "route": "webhook/",
+          "method": "DELETE"
+        },
+        "criarWebhook": {
+          "route": "webhook/",
+          "method": "PUT"
+        },
+        "criarCobrancaImediata": {
+          "route": "cob",
+          "method": "POST"
+        },
+        "criarCobrancaImediataTxId": {
+          "route": "cob/",
+          "method": "PUT"
+        },
+        "revisarCobrancaImediata": {
+          "route": "cob/",
+          "method": "PATCH"
+        },
+        "criarLocation": {
+          "route": "loc",
+          "method": "POST"
+        },
+        "desvincularLocation": {
+          "route": "loc/%s/txid",
+          "method": "DELETE"
+        },
+        "solicitaDevolucao": {
+          "route": "pix/%s/devolucao/",
+          "method": "PUT"
+        }
+      }
+    },
+    "COBRANCA": {
+      "URL": {
+        "production": "https://cdpj.partners.bancointer.com.br/cobranca/v2/",
+        "hml": "https://cdpj.partners.uatbi.com.br/cobranca/v2/"
+      },
+      "ENDPOINTS": {
+        "colecaoBoleto": {
+          "route": "boletos",
+          "method": "GET"
+        },
+        "boletoDetalhado": {
+          "route": "boletos/",
+          "method": "GET"
+        },
+        "sumarioBoleto": {
+          "route": "boletos/sumario",
+          "method": "GET"
+        },
+        "boletoPDF": {
+          "route": "boletos/%s/pdf",
+          "method": "GET"
+        },
+        "obterWebhook": {
+          "route": "boletos/webhook",
+          "method": "GET"
+        },
+        "deleteWebhook": {
+          "route": "boletos/webhook",
+          "method": "DELETE"
+        },
+        "criarWebhook": {
+          "route": "boletos/webhook",
+          "method": "PUT"
+        },
+        "emitirBoleto": {
+          "route": "boletos",
+          "method": "POST"
+        },
+        "cancelarBoleto": {
+          "route": "boletos/%s/cancelar",
+          "method": "POST"
+        }
+      }
+    }
+  }
+}
